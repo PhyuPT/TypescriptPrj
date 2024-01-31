@@ -21,4 +21,8 @@ app.get("/", (req, res) => {
   res.status(200).send("Welcome to Our Express Server!!!!");
 });
 
+/* app.get("/:id", (req, res) => {
+  res.status(200).send("Welcome to Our Express Server!!!!");
+}); */
+
   export default app;
