@@ -1,7 +1,6 @@
 import express from "express";
-//import { getAllEmployees, addEmployee } from "../controllers/employeeController";
 import { getAllEmployees, addEmployee } from "../controllers/employeeController";
-//import { getEmpbyID } from "../controllers/employeeController"; 
+//import { deleteEmpbyID } from "../controllers/employeeController"; 
 const router = express.Router();
 
 /**
@@ -51,7 +50,8 @@ router.route("/")
     .post(addEmployee)// POST  http://localhost:8000/employee
 
 router.route("/:id")
-/*.get(getEmpbyID); */
 
-
+/* router.route("/:id")
+    .delete(deleteEmpbyID) // DELETE  http://localhost:8000/employee
+*/
 export default router;

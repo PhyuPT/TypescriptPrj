@@ -39,6 +39,18 @@ export const addEmployee: ExpressFunction = async (req, res) => {
   };
 
 /*
+  export const deleteEmpbyID: ExpressFunction = async (req, res) => {
+    const requestId = req.params.id;
+    try {
+      console.log(`Deleting Employee by ID`, requestId);
+  
+      const empID = await Emp.deleteOne({ id: requestId });
+      res.status(200).send(empID);
+    } catch (err) {
+      res.status(400).send(err);
+    }
+  };
+
   export const getEmpbyID: ExpressFunction = async (req, res) => {
     try {
       const { id } = req.params; // Extract the employee ID from the request parameters
